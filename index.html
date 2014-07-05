@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iKnow - 高考生专题</title>
+	<link rel="Shortcut Icon" href="favicon.ico" /><!--地址栏和标签上显示图标-->
+	<link rel="Bookmark" href="favicon.ico" /><!--收藏夹显示图标-->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+<body>
+	<div id="tb_header" class="tb_black">
+		<ul id="tb_titlelist" class="tb_clear">
+			<li id="tb_logo"><a href="http://www.hustonline.net" title="华中大在线" target="_blank"></a></li>
+			<li><a href="http://news.hustonline.net/" title="新闻网" target="_blank">新闻网</a></li>
+			<li class="tb_phone"><a href="http://focus.hustonline.net/" title="视野网" target="_blank">视野网</a></li>
+			<li class="tb_phone"><a href="http://tv.hustonline.net/" title="网视" target="_blank">网视</a></li>
+			<li class="tb_phone"><a href="http://hustpass.hustonline.net/" title="校园通" target="_blank">校园通</a></li>
+			<li class="tb_tablet"><a href="http://2shoujie.com" title="校园二手街" target="_blank">校园二手街</a></li>
+			<li class="tb_tablet"><a href="http://pic.hustonline.net/" title="华中大相册" target="_blank">华中大相册</a></li>
+			<li class="tb_tablet"><a href="http://hust.ixuanxiu.com/" title="爱选修" target="_blank">爱选修</a></li>
+			<li class="tb_tablet"><a href="http://duocaiii.com/" title="多彩活动" target="_blank">多彩活动</a></li>
+			<li class="tb_tablet"><a href="http://app.hustonline.net/" title="大软坊-华中大软件下载" target="_blank">大软坊</a></li>
+			<li class="tb_desktop"><a href="http://upan.hustonline.net" title="云U盘" target="_blank">云U盘</a></li>
+			<li class="tb_desktop"><a href="http://hust.miwuu.com/" title="觅物" target="_blank">觅物</a></li>
+			<li class="tb_desktop"><a href="http://talk.hustonline.net/" title="微访谈" target="_blank">微访谈</a></li>
+			<li class="tb_desktop"><a href="http://doc.hustonline.net/" title="多库文档" target="_blank">多库文档</a></li>
+			<li id="tb_more" class=""><a>更多</a>
+			<ul id="tb_hiddenlist" style="display: none;">
+				<li><a href="http://t.hustonline.net/" title="HUST街区" target="_blank">HUST街区</a></li>
+				<li><a href="http://www2.hustonline.net/class/" title="自习室查询" target="_blank">自习室查询</a></li>
+				<li><a href="http://baike.hustonline.net/" title="华中大百科" target="_blank">华中大百科</a></li>
+				<li><a href="http://teacher.hustonline.net/" title="教师主页" target="_blank">教师主页</a></li>
+				<li><a href="http://happy.hustonline.net/photo/" title="大头相册" target="_blank">大头相册</a></li>
+				<li class="tb_tablet"><a href="http://appshow.hustonline.net/" title="appshow-分享喜欢的应用给好友" target="_blank">AppShow</a></li>
+				<li><a href="http://s.hustonline.net/" title="Sohust" target="_blank">Sohust</a></li>
+				<li><a href="http://www.kmgtp.org/" title="蝴蝶-HUDBT" target="_blank">蝴蝶-HUDBT</a></li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="banner">
+		<div id="bannerPic"></div>
+		<img id="monsterTopLeft" src="imgs/monsterTopLeft.png" />
+		<!-- <div id="monsterTopRight">
+			<img src="imgs/monsterTopRight.png" />
+			<a id="logIn" href="http://ik.hustonline.net/login"><img src="imgs/logIn.png" /></a>
+			<a id="logUp" href="http://ik.hustonline.net/login/register"><img src="imgs/logUp.png" /></a>
+		</div> -->
+		<div class="header_right">
+			<div id="beforeDown"></div>
+			<span class="logAndReg" id="profile"><a id="login_2" class="login2" href="javascript:void(0);" title="wanghongyang">wanghongyang</a></span>
+			<div id="setting" style="display: none;">
+				<a class="L1" href="http://ik.hustonline.net/person/index?uid=1367928174" title=""><img src="./imgs/downTag1.png"></a>
+				<a class="L2" href="http://ik.hustonline.net/index/profile?uid=1367928174" title="设置"><img src="./imgs/downTag2.png"></a>
+				<a class="L3" href="http://ik.hustonline.net/login/logout" title="退出"><img src="./imgs/downTag3.png"></a>
+			</div>
+			<div class="homeAndNews">
+				<a class="newsCome" href="javascript:return false;" title="消息" onclick="pull_message();"><span>1</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="contentAll">
+		<div class="content clearfix">
+			<a id="returniknow" href="http://ik.hustonline.net/"></a>
+			<input type="text" name="search" class="search" status="0">
+			<a class="fangdajing" href="javascript:void(0);" onclick="search_result();">
+				<img src="imgs/searchBtn.png">
+			</a>
+			<input type="button" name="addQue" class="addQue2" value="创建问题" onclick="$('#question_pop').show();">
+			<ul class="searchBox" total="6" style="display:none">
+				<li class="search_result"><a href="http://ik.hustonline.net/question/358585522" title="" class="result_a"><em class="em">暑假</em>有事带学校不回家</a></li>
+				<li class="search_result"><a href="http://ik.hustonline.net/question/358585521" title="" class="result_a">驾校ING</a></li>
+				<li class="search_result"><a href="http://ik.hustonline.net/question/358585501" title="" class="result_a">我同学<em class="em">暑假</em>来武汉玩 住一两天 求推荐宾馆 </a></li>
+				<li class="search_result"><a href="http://ik.hustonline.net/question/358585466" title="" class="result_a"><em class="em">暑假</em>留校</a></li>
+				<li class="search_result"><a href="http://ik.hustonline.net/question/358585464" title="" class="result_a">求问<em class="em">暑假</em>华科哪里有便宜的短期租房</a></li>
+				<li class="search_result"><a href="http://ik.hustonline.net/question/358585301" title="" class="result_a">分寝室</a></li>
+			</ul>
+			<div class="leftContent clearfix">
+				<div id="newQuestionTag">
+					<img id="leftTag" src="imgs/newQuestionTag.png">
+					<img id="leftTagDown" src="imgs/newQuestionTagDown.png">
+					<img id="leftArrow" src="imgs/arrow.png">
+				</div>
+				<div id="selectQuestionTag">
+					<img id="rightTag" src="imgs/selectQuestionTag.png">
+					<img id="rightTagDown" src="imgs/selectQuestionTagDown.png">
+					<img id="rightArrow" src="imgs/arrow.png">
+				</div>
+				<div class="BD" id="newBD">
+
+					<li>
+						<div class="queAndTips">
+							<p class="queBox"><a title="第四节刚开始81:59，马刺要灭火了吧！输了就见鬼了" href="http://ik.hustonline.net/question/358585479" class="question" target="_blank">第四节刚开始81:59，马刺要灭火了吧！输了就见鬼了</a></p>
+							<span class="tips"><span class="answerNum">7个答案</span><span class="date">2014-06-13 11:01</span></span>
+						</div>
+					</li>
+					<li>
+						<div class="queAndTips">
+							<p class="queBox"><a title="物理实验成绩怎么还不出！！" href="http://ik.hustonline.net/question/358585478" class="question" target="_blank">物理实验成绩怎么还不出！！</a></p>
+							<span class="tips"><span class="answerNum">1个答案</span><span class="date">2014-06-13 10:55</span></span>
+						</div>
+					</li>
+					
+
+				</div>
+				<div class="BD" id="selectBD">精选问题的内容，class和原网站一样，宽度一样是612px，高度固定为1223px</div>
+				<div id="fixPosition">
+					<span>
+							<a class="borderRadius pageBefore" href="">&lt;上一页</a>
+							<a class="borderRadius" href="" style="background-color: #FDD730;">1</a>
+							<a class="borderRadius" href="">2</a>
+							<a class="borderRadius" href="">3</a>
+							<a class="borderRadius" href="">4</a>
+							<a class="borderRadius" href="">5</a>
+							<a class="borderRadius" href="">6</a>
+							<a class="borderRadius" href="">7</a>
+							<a class="borderRadius" href="">8</a>
+							<a class="borderRadius" href="">9</a>
+							<a class="borderRadius" href="">10</a>
+							<a class="borderRadius pageAfter" href="http://ik.hustonline.net/6">下一页&gt;</a>
+					</span>
+					<!--<span class="pageLast"><a class="borderRadius" href="" title="">末页</a></span>-->
+				</div>
+				<div id="fixPositionSelect">
+					<span>
+							<a class="borderRadius pageBefore" href="">&lt;上一页</a>
+							<a class="borderRadius" href="" style="background-color: #FDD730;">1</a>
+							<a class="borderRadius" href="">2</a>
+							<a class="borderRadius" href="">3</a>
+							<a class="borderRadius" href="">4</a>
+							<a class="borderRadius" href="">5</a>
+							<a class="borderRadius" href="">6</a>
+							<a class="borderRadius" href="">7</a>
+							<a class="borderRadius" href="">8</a>
+							<a class="borderRadius" href="">9</a>
+							<a class="borderRadius" href="">10</a>
+							<a class="borderRadius pageAfter" href="http://ik.hustonline.net/6">下一页&gt;</a>
+					</span>
+					<!--<span class="pageLast"><a class="borderRadius" href="" title="">末页</a></span>-->
+				</div>
+			</div>
+			<div class="rightContent">
+				<div class="rightTopContent clearfix">
+					<div id="referTitle"><img src="imgs/referance.png"></div>
+					<div id="rightTopInner">
+						<ul class="resources">
+							<li class="resourceList"><a href="">华科采访介绍</a></li>
+							<li class="resourceList"><a href="">学术氛围</a></li>
+							<li class="resourceList"><a href="">各届优秀校友盘点</a></li>
+							<li class="resourceList"><a href="">历史风云人物</a></li>
+							<li class="resourceList"><a href="">华科十景</a></li>
+							<li class="resourceList"><a href="">社团及团队</a></li>
+							<li class="resourceList"><a href="">生活条件</a></li>
+							<li class="resourceList"><a href="">食堂照片</a></li>
+							<li class="resourceList"><a href="">校友自拍华科60周年</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rightBottomContent clearfix">
+					<div id="rankTitle"><img src="imgs/rankTitle.png"></div>
+					<div id="rightBottomInner">
+						<tbody>
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" width="178" style="height:13.5pt;width:144pt">专业名称</td>
+							  <td class="xl67" width="66" style="border-left:none;width:50pt">专业评分</td>
+							</tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">机械工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">94</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">公共卫生与预防医学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">91</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">电气工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">90</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">光学工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">89</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">动力工程及工程热物理</td>
+							  <td class="xl67" style="border-top:none;border-left:none">85</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">生物医学工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">85</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">控制科学与工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">83</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">公共管理</td>
+							  <td class="xl67" style="border-top:none;border-left:none">83</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">材料科学与工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">82</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">新闻传播学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">81</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">临床医学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">81</td>
+							</tr><br />
+							<tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">基础医学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">80</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">信息与通信工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">79</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">管理科学与工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">78</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">电子科学与技术</td>
+							  <td class="xl67" style="border-top:none;border-left:none">77</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">计算机科学与技术</td>
+							  <td class="xl67" style="border-top:none;border-left:none">77</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">工商管理</td>
+							  <td class="xl67" style="border-top:none;border-left:none">77</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">教育学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">76</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">物理学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">76</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">生物学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">75</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">土木工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">75</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">马克思主义理论</td>
+							  <td class="xl67" style="border-top:none;border-left:none">74</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">水利工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">74</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">社会学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">哲学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">理论经济学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">应用经济学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">化学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">建筑学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">城乡规划学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">中西医结合</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">药学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">73</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">中国语言文学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">72</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">数学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">72</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">统计学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">72</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">力学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">72</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">环境科学与工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">72</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">软件工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">72</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">护理学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">72</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">风景园林学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">71</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">法学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">70</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">外国语言文学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">70</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">生态学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">70</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">船舶与海洋工程</td>
+							  <td class="xl67" style="border-top:none;border-left:none">70</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">口腔医学</td>
+							  <td class="xl67" style="border-top:none;border-left:none">65</td>
+							 </tr><br />
+							 <tr height="18" style="height:13.5pt">
+							  <td height="18" class="xl66" style="height:13.5pt;border-top:none">中国史</td>
+							  <td class="xl67" style="border-top:none;border-left:none">64</td>
+							 </tr><br />
+							 <!--[if supportMisalignedColumns]-->
+							 <tr height="0" style="display:none">
+							  <td width="178" style="width:134pt"></td>
+							  <td width="66" style="width:50pt"></td>
+							 </tr><br />
+							 <!--[endif]-->
+						</tbody>
+
+					</div>
+				</div>
+			</div>
+			<a id="returnTop" href="#"></a>
+		</div>
+	</div>
+	<div class="question_pop" style="display:none;" id="question_pop">
+		<div id="leftside2" class="q_pop_inner">
+			<img class="q_pop_top" src="http://ik.hustonline.net/resource/image/login_l_t.gif" alt="">
+			<img class="closePop" src="http://ik.hustonline.net/resource/image/close.gif" alt="">
+			<form>
+				<p>问题标题</p>
+				<input class="add_q inputStyle" type="text" value="" id="question_p">
+				<p>问题补充（选填）</p>
+				<textarea class="renew inputStyle" value="" id="supplement"></textarea>
+				<p>添加图片（最多可五张）</p>
+				<div class="addImages">
+					<div class="xxx btn10 clearfix" id="imagegroup">
+						<div id="addImage" class="uploadify" style="height: 30px; width: 120px;"><object id="SWFUpload_0" type="application/x-shockwave-flash" data="/resource/js/uploadify/uploadify.swf?preventswfcaching=1402635311609" width="120" height="30" class="swfupload" style="position: absolute; z-index: 1;"><param name="wmode" value="transparent"><param name="movie" value="/resource/js/uploadify/uploadify.swf?preventswfcaching=1402635311609"><param name="quality" value="high"><param name="menu" value="false"><param name="allowScriptAccess" value="always"><param name="flashvars" value="movieName=SWFUpload_0&amp;uploadURL=%2Fupload%2Fupload_image&amp;useQueryString=false&amp;requeueOnError=false&amp;httpSuccess=&amp;assumeSuccessTimeout=30&amp;params=&amp;filePostName=image&amp;fileTypes=*.png%3B*.jpg%3B*.gif&amp;fileTypesDescription=%E8%AF%B7%E9%80%89%E6%8B%A9%E5%9B%BE%E7%89%87%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%96%87%E4%BB%B6&amp;fileSizeLimit=2MB&amp;fileUploadLimit=5&amp;fileQueueLimit=999&amp;debugEnabled=false&amp;buttonImageURL=%2F&amp;buttonWidth=120&amp;buttonHeight=30&amp;buttonText=&amp;buttonTextTopPadding=0&amp;buttonTextLeftPadding=0&amp;buttonTextStyle=color%3A%20%23000000%3B%20font-size%3A%2016pt%3B&amp;buttonAction=-110&amp;buttonDisabled=false&amp;buttonCursor=-2"></object><div id="addImage-button" class="uploadify-button upfile2" style="background-image: url(http://ik.hustonline.net/resource/image/imagesAdd.png); text-indent: -9999px; height: 30px; line-height: 30px; width: 120px;"><span class="uploadify-button-text">SELECT FILES</span></div></div><div id="addImage-queue" class="uploadify-queue"></div>
+					</div>
+				</div>
+				<!--
+				<p>问题分类</p>
+				<p class="q_radio">
+					<input name="q_type" type="radio" value="生活娱乐" id=2 /><label for="life">生活娱乐</label>
+					<input name="q_type" type="radio" value="技术专业" id=4 /><label for="tech">技术专业</label>
+					<input name="q_type" type="radio" value="学习考试" id=6 /><label for="vocation">学习考试</label>
+					<input name="q_type" type="radio" value="其他" id=8 /><label for="otherthing">其他</label>
+				</p>-->
+				<p>
+					<span>悬赏积分</span>
+					<input class="add_q2 inputStyle" type="text" value="" id="score">
+					<label for="niming"><input class="noname" name="noname" type="checkbox" value="匿名登录" id="niming">匿名发布</label>
+				</p>
+				<input class="submit_o btn5" type="button" value="提交" onclick="ask_question();">
+			</form>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div id="footerPic"></div>
+		<div class="links">
+			<a id="slight3" href="http://www.hust.edu.cn/">华中科技大学</a>
+			<a href="http://www.hustonline.net/">华中大在线</a>
+			<a href="http://www.2shoujie.com/">校园二手街</a>
+			<a id="slight1" href="http://ik.hustonline.net/">iKnow</a>
+			<a id="slight2" href="http://hust.ixuanxiu.com/">爱选修</a>
+			<a id="slight4" href="http://lovenote.sinaapp.com/">恋爱笔记</a>
+		</div>
+		<div class="notations">
+			<span id="note1">免责声明</span>  <span>Hustonline.net版权所有</span>   <span id="note2">鄂ICP备05011690号</span>   <span id="note3">Powered by</span> <img id="bingyanMini" src="imgs/bingyan_mini.png"> <a href="http://www.bingyan.net/"><span id="note4">冰岩作坊</span></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://ik.hustonline.net/resource/js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/PseudoPlugin.js"></script>
+	<script type="text/javascript" src="http://ik.hustonline.net/resource/js/titlebar.js"></script>
+	<script type="text/javascript" src="http://ik.hustonline.net/resource/js/uploadify/jquery.uploadify-3.1.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

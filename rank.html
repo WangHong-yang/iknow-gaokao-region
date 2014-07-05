@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iKnow - 专业排名信息</title>
+	<link rel="Shortcut Icon" href="favicon.ico" /><!--地址栏和标签上显示图标-->
+	<link rel="Bookmark" href="favicon.ico" /><!--收藏夹显示图标-->
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/rank.css">
+</head>
+<body>
+	<div id="tb_header" class="tb_black">
+		<ul id="tb_titlelist" class="tb_clear">
+			<li id="tb_logo"><a href="http://www.hustonline.net" title="华中大在线" target="_blank"></a></li>
+			<li><a href="http://news.hustonline.net/" title="新闻网" target="_blank">新闻网</a></li>
+			<li class="tb_phone"><a href="http://focus.hustonline.net/" title="视野网" target="_blank">视野网</a></li>
+			<li class="tb_phone"><a href="http://tv.hustonline.net/" title="网视" target="_blank">网视</a></li>
+			<li class="tb_phone"><a href="http://hustpass.hustonline.net/" title="校园通" target="_blank">校园通</a></li>
+			<li class="tb_tablet"><a href="http://2shoujie.com" title="校园二手街" target="_blank">校园二手街</a></li>
+			<li class="tb_tablet"><a href="http://pic.hustonline.net/" title="华中大相册" target="_blank">华中大相册</a></li>
+			<li class="tb_tablet"><a href="http://hust.ixuanxiu.com/" title="爱选修" target="_blank">爱选修</a></li>
+			<li class="tb_tablet"><a href="http://duocaiii.com/" title="多彩活动" target="_blank">多彩活动</a></li>
+			<li class="tb_tablet"><a href="http://app.hustonline.net/" title="大软坊-华中大软件下载" target="_blank">大软坊</a></li>
+			<li class="tb_desktop"><a href="http://upan.hustonline.net" title="云U盘" target="_blank">云U盘</a></li>
+			<li class="tb_desktop"><a href="http://hust.miwuu.com/" title="觅物" target="_blank">觅物</a></li>
+			<li class="tb_desktop"><a href="http://talk.hustonline.net/" title="微访谈" target="_blank">微访谈</a></li>
+			<li class="tb_desktop"><a href="http://doc.hustonline.net/" title="多库文档" target="_blank">多库文档</a></li>
+			<li id="tb_more" class=""><a>更多</a>
+			<ul id="tb_hiddenlist" style="display: none;">
+				<li><a href="http://t.hustonline.net/" title="HUST街区" target="_blank">HUST街区</a></li>
+				<li><a href="http://www2.hustonline.net/class/" title="自习室查询" target="_blank">自习室查询</a></li>
+				<li><a href="http://baike.hustonline.net/" title="华中大百科" target="_blank">华中大百科</a></li>
+				<li><a href="http://teacher.hustonline.net/" title="教师主页" target="_blank">教师主页</a></li>
+				<li><a href="http://happy.hustonline.net/photo/" title="大头相册" target="_blank">大头相册</a></li>
+				<li class="tb_tablet"><a href="http://appshow.hustonline.net/" title="appshow-分享喜欢的应用给好友" target="_blank">AppShow</a></li>
+				<li><a href="http://s.hustonline.net/" title="Sohust" target="_blank">Sohust</a></li>
+				<li><a href="http://www.kmgtp.org/" title="蝴蝶-HUDBT" target="_blank">蝴蝶-HUDBT</a></li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="banner">
+		<div id="bannerPic"></div>
+		<img id="monsterTopLeft" src="imgs/monsterTopLeft.png" />
+		<div id="monsterTopRight">
+			<img src="imgs/monsterTopRight.png" />
+			<a id="logIn" href="http://ik.hustonline.net/login"><img src="imgs/logIn.png" /></a>
+			<a id="logUp" href="http://ik.hustonline.net/login/register"><img src="imgs/logUp.png" /></a>
+		</div>
+	</div>
+	<div class="content clearfix">
+		<a id="returniknow" href="http://ik.hustonline.net/"></a>
+		<input type="text" name="search" class="search" status="0">
+		<a class="fangdajing" href="javascript:void(0);" onclick="search_result();">
+			<img src="imgs/searchBtn.png">
+		</a>
+		<input type="button" name="addQue" class="addQue2" value="创建问题" onclick="window.location.href='/login';">
+		<div class="leftContent clearfix">
+			<div id="referTitle"><img src="imgs/rankTitle.png"></div>
+			<div id="leftInner">
+				<ul>
+					<li class="clicked">第一条排名</li>
+					<li>第二条排名</li>
+					<li>第三条排名</li>
+					<li>第四条排名</li>
+					<li>第五条排名</li>
+					<li>第六条排名</li>
+					<li>第七条排名</li>
+				</ul>
+			</div>
+		</div>
+		<div class="rightContent">
+			<ul id="rightInner">
+				<li>第一条排名的内容第一条排名的内容第一条排名的内容第一条排名的内容</li>
+				<li style="display: none;">第二条排名的内容</li>
+				<li style="display: none;">第三条排名的内容</li>
+				<li style="display: none;">第四条排名的内容</li>
+				<li style="display: none;">第五条排名的内容</li>
+				<li style="display: none;">第六条排名的内容</li>
+				<li style="display: none;">第七条排名的内容</li>
+			</ul>
+		</div>
+			
+		<a id="returnTopic" href="index.html"></a>
+		<a id="returnTop" href="#"></a>
+	</div>
+	<div class="footer">
+		<div id="footerPic"></div>
+		<div class="links">
+			<a id="slight3" href="http://www.hust.edu.cn/">华中科技大学</a>
+			<a href="http://www.hustonline.net/">华中大在线</a>
+			<a href="http://www.2shoujie.com/">校园二手街</a>
+			<a id="slight1" href="http://ik.hustonline.net/">iKnow</a>
+			<a id="slight2" href="http://hust.ixuanxiu.com/">爱选修</a>
+			<a id="slight4" href="http://lovenote.sinaapp.com/">恋爱笔记</a>
+		</div>
+		<div class="notations">
+			<span id="note1">免责声明</span>  <span>Hustonline.net版权所有</span>   <span id="note2">鄂ICP备05011690号</span>   <span id="note3">Powered by</span> <img id="bingyanMini" src="imgs/bingyan_mini.png"> <a href="http://www.bingyan.net/"><span id="note4">冰岩作坊</span></a>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/rank.js"></script>
+</body>
+</html>
